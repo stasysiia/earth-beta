@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+        __                                                                    
+       /\ \__                                            __   __              
+   ____\ \ ,_\     __       ____   __  __          ____ /\_\ /\_\      __     
+  /',__\\ \ \/   /'__`\    /',__\ /\ \/\ \        /',__\\/\ \\/\ \   /'__`\   
+ /\__, `\\ \ \_ /\ \L\.\_ /\__, `\\ \ \_\ \   __ /\__, `\\ \ \\ \ \ /\ \L\.\_ 
+ \/\____/ \ \__\\ \__/.\_\\/\____/ \/`____ \ /\_\\/\____/ \ \_\\ \_\\ \__/.\_\
+  \/___/   \/__/ \/__/\/_/ \/___/   `/___/> \\/_/ \/___/   \/_/ \/_/ \/__/\/_/
+                                       /\___/                                 
+                                       \/__/                                  
+
+Created by Anastasiia P.
+-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Earth</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.pkgd.min.js"></script>
+</head>
+
+<body id="menupageid">
+    <header>
+        <div id="monobama">
+            <svg>
+                <filter id="blur">
+                    <feGaussianBlur stdDeviation="2" />
+                </filter>
+            </svg>
+        </div>
+        <div id="top-nav" class="glass-effect">
+            <div id="site-title">
+                <a href="index.html">
+                    <img id="logo" src="../pics/o-logo.png" />
+                </a>
+            </div>
+    <!--mobile nav hamb-->
+            <input type="checkbox" id="hamburger" />
+            <nav id="main-nav" class="menu">
+                <ul id="kitty-drop" class="sliding-underline">
+                    <li>
+                        <h3><a href="menu.html">Order Now</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="index.html#scrollhome">Events</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="index.html#aboutus">About Us</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="index.html#visit">Visit</a></h3>
+                    </li>
+                    <li>
+                        <a href="login.html" class="button">LogIn</a>
+                    </li>
+                </ul>
+            </nav>
+            <label class="menuicon" for="hamburger">
+                <span></span>
+            </label>
+        </div>
+    </header>
+
+    <!--menu-->
+
+    <main id="menupage" class="menubg">
+        <h3 id="menutoday-h3">TODAY'S SPECIAL</h3>
+        <section id="menutoday" class="carousel menubg" data-fpckity='{ "wrapAround": true }'>
+            <div class="carousel-cell food1 d-col-3 t-col-3 m-col-12">
+                <img src="../pics/o-menu-tds-2.png" alt="Soup DU JOUR">
+                <div class="carousel-txt">
+                    <p>Soup DU JOUR</p>
+                    <p>Farm veggie, chicken broth</p>
+                    <p>$6.00</p>
+                </div>
+            </div>
+            <div class="carousel-cell food2 d-col-3 t-col-3 m-col-12">
+                <img src="../pics/o-menu-tds-1.jpg" alt="Turkey Chip">
+                <div class="carousel-txt">
+                    <p>Turkey Chip</p>
+                    <p>Farm veggie, turkey, cheese</p>
+                    <p> $7.00</p>
+                </div>
+            </div>
+            <div class="carousel-cell food1 d-col-3 t-col-3 m-col-12">
+                <img src="../pics/o-menu-tds-3.jpg" alt="Soup DU JOUR">
+                <div class="carousel-txt">
+                    <p>Pizza</p>
+                    <p>Farm veggie, mozzarella, gluten-free dough, arugula</p>
+                    <p> $7.00</p>
+                </div>
+            </div>
+            <div class="carousel-cell food2 d-col-3 t-col-3 m-col-12">
+                <img src="../pics/o-menu-tds-4.jpg" alt="Turkey Chip">
+                <div class="carousel-txt">
+                    <p>Breakfast #1</p>
+                    <p>Farm veggie, avocado, chicken nuggets</p>
+                    <p> $10.00</p>
+                </div>
+            </div>
+            <div class="carousel-cell food2 d-col-3 t-col-3 m-col-12">
+                <img src="../pics/o-menu-tds-5.jpg" alt="Turkey Chip">
+                <div class="carousel-txt">
+                    <p>Breakfast #2</p>
+                    <p>Farm veggie, eggs, rice</p>
+                    <p>$10.00</p>
+                </div>
+            </div>
+            <div class="carousel-cell food1 d-col-3 t-col-3 m-col-12">
+                <img src="../pics/o-menu-tds-6.jpg" alt="Soup DU JOUR">
+                <div class="carousel-txt">
+                    <p>Salad</p>
+                    <p>Farm veggie</p>
+                    <p> $5.00</p>
+                </div>
+            </div>
+            <div class="carousel-cell food2 d-col-3 t-col-3 m-col-12">
+                <img src="../pics/o-menu-tds-7.jpg" alt="Turkey Chip">
+                <div class="carousel-txt">
+                    <p>Beet's Hunnus</p>
+                    <p>Avocado, beet's hummus, toast</p>
+                    <p> $5.00</p>
+                </div>
+            </div>
+        </section>
+
+   <!--menu2-->
+        <section id="menu" class="menubg">
+            <h3>MENU</h3>
+            <div id="menutxtbox">
+                <div class="menu-category d-col-12 t-col-12 m-col-12">
+                    <h1 class="menuh1 d-col-12 t-col-12 m-col-12">Hot Drinks</h1>
+                    <div class="menurow">
+                        <div class="fl d-col-6 t-col-6 m-col-12">
+                            <p class="item"><span>Espresso</span><span>3</span></p>
+                            <p class="desc">100% Arabica, or 100% Robusta, or mixed</p>
+                        </div>
+                        <div class="fr d-col-6 t-col-6 m-col-12">
+                            <p class="item"><span>Latte</span><span>4</span></p>
+                            <p class="desc">100% Arabica, farm milk or  oat/almond milk</p>
+                        </div>
+                    </div>
+                    <div class="menurow">
+                        <div class="fl d-col-6 t-col-6 m-col-12">
+                            <p class="item"><span>Hot Lemon Toddy</span><span>4</span></p>
+                            <p class="desc">Lemon, lemon juice, honey, cinnamon stick</p>
+                        </div>
+                        <div class="fr d-col-6 t-col-6 m-col-12">
+                            <p class="item"><span>Cappuccino</span><span>4</span></p>
+                            <p class="desc">100% Arabica, farm milk or  oat/almond milk</p>
+                        </div>
+                    </div>
+                    <div class="menurow">
+                        <div class="fl d-col-6 t-col-6 m-col-12">
+                            <p class="item"><span>Hot Chocolate</span><span>4</span></p>
+                            <p class="desc">Cocoa powder, farm milk or  oat/almond milk</p>
+                        </div>
+                        <div class="fr d-col-6 t-col-6 m-col-12">
+                            <p class="item"><span>Hot Tea</span><span>4</span></p>
+                            <p class="desc">Variety: Jasmin, Oolong, Ginger, Earl Gray, 
+                                Chamomile</p>
+                        </div>
+                    </div>
+                </div>    
+                <div class="menu-category d-col-12 t-col-12 m-col-12">
+                    <h1 class="menuh1 d-col-12 t-col-12 m-col-12">Cold Drinks</h1>
+                    <div class="menurow">
+                        <div class="fl d-col-6 t-col-6 m-col-12">
+                            <p class="item"><span>Juice</span><span>3</span></p>
+                            <p class="desc">Fresh: apple, orange, carrot, mango, mix</p>
+                        </div>
+                        <div class="fr d-col-6 t-col-6 m-col-12">
+                            <p class="item"><span>Italian Soda</span><span>4</span></p>
+                            <p class="desc">Torani syrup, club soda, cream</p>
+                        </div>
+                    </div>
+                    <div class="menurow">
+                        <div class="fl d-col-6 t-col-6 m-col-12">
+                            <p class="item"><span>Ice Tea</span><span>4</span></p>
+                            <p class="desc">Variety: Jasmin, Oolong, Ginger, Earl Gray, 
+                                Chamomile</p>
+                        </div>
+                        <div class="fr d-col-6 t-col-6 m-col-12">
+                            <p class="item"><span>Ice Coffee</span><span>4</span></p>
+                            <p class="desc">100% Arabica, farm milk or oat/almond milk, syrup</p>
+                        </div>
+                    </div>
+                </div>    
+                <div class="menu-category d-col-12 t-col-12 m-col-12">
+                    <h1 class="menuh1 d-col-12 t-col-12 m-col-12">Sandwiches</h1>
+                    <div class="menurow">
+                        <div class="fl d-col-6 t-col-6 m-col-12">
+                            <p class="item"><span>Tuna Reg / Melt</span><span>7</span></p>
+                            <p class="desc">Fresh baked bread, tuna, seasonal veggie, spicy, cheese</p>
+                        </div>
+                        <div class="fr d-col-6 t-col-6 m-col-12">
+                            <p class="item"><span>Turkey Reg / Melt</span><span>7</span></p>
+                            <p class="desc">Fresh baked bread, turkey, seasonal veggie, spicy, cheese</p>
+                        </div>
+                    </div>
+                    <div class="menurow">
+                        <div class="fl d-col-6 t-col-6 m-col-12">
+                            <p class="item"><span>Veggie Royal</span><span>7</span></p>
+                            <p class="desc">Fresh baked bread,avocado, seasonal veggie</p>
+                        </div>
+                        <div class="fr d-col-6 t-col-6 m-col-12">
+                            <p class="item"><span>Grilled Cheese</span><span>7</span></p>
+                            <p class="desc">Fresh baked bread, swiss cheese or cheddar</p>
+                        </div>
+                    </div>
+                </div>    
+                <div class="menu-category d-col-12 t-col-12 m-col-12">
+                    <h1 class="menuh1 d-col-12 t-col-12 m-col-12">Breakfast</h1>
+                    <div class="menurow">
+                        <div class="fl d-col-6 t-col-6 m-col-12">
+                            <p class="item"><span>Oatmeal</span><span>4</span></p>
+                            <p class="desc">Farm milk or homemade almond milk, oat</p>
+                        </div>
+                        <div class="fr d-col-6 t-col-6 m-col-12">
+                            <p class="item"><span>Toast with Jam</span><span>4</span></p>
+                            <p class="desc">Fresh baked bread, jam (choice), peanut butter</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer flex-grid">
+            <div class="foot-contact d-col-4 t-col-12 m-col-12">
+                <div class="foot-wrap">
+                    <h6>Our Hours</h6>
+                    <ul>
+                        <li><b>Mon</b> 7am-1pm</li>
+                        <li><b>Tue-Sat</b> 7am-11pm</li>
+                        <li><b>Sun</b> 8am-8pm</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foot-links d-col-4 t-col-12 m-col-12">
+                <div class="foot-wrap">
+                    <h6>Follow Us</h6>
+                    <div class="sociables">
+                        <div class="fl inline">
+                            <a href="#" class="fa fa-facebook" target="_blank"></a>
+                        </div>
+                        <div class="fl inline">
+                            <a href="#" class="fa fa-yelp" target="_blank"></a>
+                        </div>
+                        <div class="fl inline">
+                            <a href="#" class="fa fa-instagram" target="_blank"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="foot-map d-col-4 t-col-12 m-col-12">
+                <div class="foot-wrap">
+                    <h6>Contact Us</h6>
+                    <ul>
+                        <li><b class="sos"> 5555 Earth Ave, Santa Monica, CA, 55555</b></li>
+                        <li><b class="sos">(555) 555-5555</b></li>
+                        <li><b class="sos">earth@yahoo.com</b></li>
+                        <li style="max-width:30%;"><iframe id="cat-map"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52909.72811932581!2d-118.51577494181888!3d34.02185553708686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2a4cec2910019%3A0xb4170ab5ff23f5ab!2z0KHQsNC90YLQsC3QnNC-0L3QuNC60LAsINCa0LDQu9C40YTQvtGA0L3QuNGP!5e0!3m2!1sru!2sus!4v1595572516246!5m2!1sru!2sus"
+                                width="auto" height="200" frameborder="0" style="border:0;" allowfullscreen=""
+                                aria-hidden="false" tabindex="0"></iframe></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+<script>
+    // Flickity 
+    $(document).ready(function(){
+        var options = {
+        initialIndex: 2,
+        wrapAround: true,
+        prevNextButtons: true,
+        pageDots: false
+        };
+
+        $('.carousel').flickity( options );
+    });
+</script>
+<script src="https://kit.fontawesome.com/676674b107.js" crossorigin="anonymous"></script>
+</html>

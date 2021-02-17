@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+        __                                                                    
+       /\ \__                                            __   __              
+   ____\ \ ,_\     __       ____   __  __          ____ /\_\ /\_\      __     
+  /',__\\ \ \/   /'__`\    /',__\ /\ \/\ \        /',__\\/\ \\/\ \   /'__`\   
+ /\__, `\\ \ \_ /\ \L\.\_ /\__, `\\ \ \_\ \   __ /\__, `\\ \ \\ \ \ /\ \L\.\_ 
+ \/\____/ \ \__\\ \__/.\_\\/\____/ \/`____ \ /\_\\/\____/ \ \_\\ \_\\ \__/.\_\
+  \/___/   \/__/ \/__/\/_/ \/___/   `/___/> \\/_/ \/___/   \/_/ \/_/ \/__/\/_/
+                                       /\___/                                 
+                                       \/__/                                  
+
+Created by Anastasiia P.
+-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Earth</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/hominis" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="monobama">
+            <svg>
+                <filter id="blur">
+                    <feGaussianBlur stdDeviation="2" />
+                </filter>
+            </svg>
+        </div>
+        <div id="top-nav" class="glass-effect">
+            <div id="site-title">
+                <a href="index.html">
+                    <img id="logo" src="../pics/o-logo.png" />
+                </a>
+            </div>
+    <!--mobile nav hamb-->
+            <input type="checkbox" id="hamburger" />
+            <nav id="main-nav" class="menu">
+                <ul id="kitty-drop" class="sliding-underline">
+                    <li>
+                        <h3><a href="menu.html">Order Now</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="index.html#scrollhome">Events</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="index.html#aboutus">About Us</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="index.html#visit">Visit</a></h3>
+                    </li>
+                    <li>
+                       <a href="login.html" class="button">LogIn</a>
+                    </li>
+                </ul>
+            </nav>
+            <label class="menuicon" for="hamburger">
+                <span></span>
+            </label>
+        </div>
+    </header>
+
+    <main id="frontpage">
+        <section id="hero">
+            <div id="hometxt" class="fl d-col-4 t-col-4 m-col-12">
+                <h2>ORGANIC COFFEE LIVES HERE</h2>
+            </div>
+            <!--covid-->
+            <div id="covid" class="glass-effect d-col-4 t-col-6 m-col-12">
+                <h3>COVID-19</h3>
+                <p>Pick-up only. NO MASK, NO SERVICE.</p>
+            </div>
+        </section>
+
+        <section id="scrollhome" class="flex-grid">
+                <h3 id="have-fun">Have Fun</h3>
+                <div id="eventbox1" class="fl d-col-6 t-col-6 m-col-12">
+                    <h4><i class="fa fa-calendar" aria-hidden="true"></i><b> Happen Today</b></h4> 
+                     <p id="eventcovid"><b>All events are canceled during the COVID-19</b></p>
+                </div>
+                <div id="eventbox2" class="fr d-col-6 t-col-6 m-col-12">
+                    <h4><i class="fa fa-calendar" aria-hidden="true"></i><b> Past Events</b></h4> 
+                     <p><b>03/15-03/03/20</b> - Contemporary Art Exhibition</p>
+                     <p><b>02/20/20</b> - Live Jazz Music</p>
+                     <p><b>02/16/20</b> - Live Guitar Music</p>
+                     <p><b>02/15-02/13/20</b> - Pet Adoption Event</p>
+                </div>
+        </section>
+
+        <section id="aboutus">
+            <h3>Why Organic? Our Story</h3>
+            <div id="aboutbox1" class="fl d-col-6 t-col-6 m-col-12">
+                <div class="aboutbox-inner"></div>
+            </div>
+            <div id="aboutbox2" class="fr d-col-6 t-col-6 m-col-12">
+                <article id="txtinboxabout">
+                    <p><b>The Earth Cafe</b> is a quaint bohemian-style coffee house.</p> 
+                    <p>Inside, you’ll find mismatching wallpaper, chairs and tables that placidly come together for a nice colorful mix. It's a place where you can get music, art, express yourself, make a difference in the world, and various other takeaways, depending on how you make use of the space but most of all, be a part of the community.</p>
+                    <ul>
+                        <li>We use a reverse osmosis system to filter our water!</li>
+                        <li>We make our own Almond and Coconut milks without artificial additives!</li>
+                        <li>We have natural sweeteners such as Agave, Honey & Raw Sugar.</li>
+                        <li>We serve <b>ORGANIC, GLUTEN-FREE & VEGAN OPTIONS!</b></li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer id="visit">
+        <section class="footer flex-grid">
+            <div class="foot-contact d-col-4 t-col-12 m-col-12">
+                <div class="foot-wrap">
+                    <h6>Our Hours</h6>
+                    <ul>
+                        <li><b>Mon</b> 7am-1pm</li>
+                        <li><b>Tue-Sat</b> 7am-11pm</li>
+                        <li><b>Sun</b> 8am-8pm</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foot-links d-col-4 t-col-12 m-col-12">
+                <div class="foot-wrap">
+                    <h6>Follow Us</h6>
+                    <div class="sociables">
+                        <div class="fl inline">
+                            <a href="#" class="fa fa-facebook" target="_blank"></a>
+                        </div>
+                        <div class="fl inline">
+                            <a href="#" class="fa fa-yelp" target="_blank"></a>
+                        </div>
+                        <div class="fl inline">
+                            <a href="#" class="fa fa-instagram" target="_blank"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="foot-map d-col-4 t-col-12 m-col-12">
+                <div class="foot-wrap">
+                    <h6>Contact Us</h6>
+                    <ul>
+                        <li><b class="sos"> 5555 Earth Ave, Santa Monica, CA, 55555</b></li>
+                        <li><b class="sos">(555) 555-5555</b></li>
+                        <li><b class="sos">earth@yahoo.com</b></li>
+                        <li style="max-width:30%;"><iframe id="map"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52909.72811932581!2d-118.51577494181888!3d34.02185553708686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2a4cec2910019%3A0xb4170ab5ff23f5ab!2z0KHQsNC90YLQsC3QnNC-0L3QuNC60LAsINCa0LDQu9C40YTQvtGA0L3QuNGP!5e0!3m2!1sru!2sus!4v1595572516246!5m2!1sru!2sus"
+                                width="auto" height="200" frameborder="0" style="border:0;" allowfullscreen=""
+                                aria-hidden="false" tabindex="0"></iframe></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+<script src="https://kit.fontawesome.com/676674b107.js" crossorigin="anonymous"></script>
+</html>
